@@ -1,0 +1,187 @@
+/* 🔹 About Section */
+.about {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #232526, #414345); /* Matching Portfolio Gradient */
+  color: #fff; /* White text for better contrast */
+  line-height: 1.7;
+}
+
+/* 🔹 Main Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 🔹 Title Styling */
+.title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ffd700; /* Gold title color for a premium look */
+  border-bottom: 2px solid #ffd700;
+  padding-bottom: 10px;
+}
+
+/* 🔹 Introduction */
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ccc;
+}
+
+/* 🔹 Section Cards */
+.personalInfo, .skills, .education {
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent Card Effect */
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔹 Section Titles */
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ffd700; /* Gold Section Headers */
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* 🔹 Info List */
+.infoList {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+/* 🔹 Each Info Item */
+.infoList li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Fixes long email wrapping */
+}
+
+/* 🔹 Label Text */
+.infoLabel {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #ddd;
+}
+
+/* 🔹 Email Fix */
+.email {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-size: 1rem;
+  color: #ffd700; /* Gold accent */
+}
+
+/* 🔹 Icons */
+.icon {
+  margin-right: 10px;
+  color: #ffd700; /* Gold icons */
+  width: 22px;
+  height: 22px;
+}
+
+/* 🔹 Download Button */
+.downloadButton {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ffd700; /* Gold Button */
+  color: #232526;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.downloadButton:hover {
+  background-color: #e6c200;
+}
+
+.downloadIcon {
+  margin-right: 8px;
+  width: 22px;
+  height: 22px;
+}
+
+/* 🔹 Skills Grid */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* 🔹 Each Skill Item */
+.skillItem {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2); /* Light Transparent Effect */
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* 🔹 Skill Icon */
+.skillIcon {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  color: #ffd700;
+}
+
+.skillName {
+  font-weight: bold;
+}
+
+/* 🔹 Education Section */
+.educationItem {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.educationItem:last-child {
+  border-bottom: none;
+}
+
+/* 🔹 Education Details */
+.institution {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.year {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.course {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* 📱 Mobile Adjustments */
+@media (max-width: 768px) {
+  .infoList li {
+    flex-direction: column; /* Stacks items on mobile */
+    text-align: center;
+  }
+
+  .email {
+    width: 100%;
+    text-align: center;
+  }
+}

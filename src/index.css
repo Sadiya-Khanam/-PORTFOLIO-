@@ -1,0 +1,83 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #282c34;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  color: #bbb;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a.active {
+  color: #61dafb;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #61dafb;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 0.1);
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,87 @@
+.portfolioContainer {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #232526, #414345);
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.portfolioTitle {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffd700; /* Gold color */
+  border-bottom: 3px solid #ffd700; /* Underline effect */
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.cardGrid {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center the cards */
+  gap: 2rem; /* Spacing between cards */
+}
+
+.card {
+  width: 90%; /* Make cards wider */
+  max-width: 600px; /* Prevent them from stretching too much */
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cardImg {
+  width: 100%; /* Ensure full width */
+  height: auto; /* Adjust height dynamically */
+  max-height: 250px; /* Set a reasonable limit */
+  object-fit: contain; /* Show full image without cropping */
+  display: block;
+  margin: 0 auto;
+  border-bottom: 2px solid #444;
+}
+
+
+.cardBody {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffd700; /* Gold color for titles */
+  position: relative;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.cardTitle::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: #ffd700; /* Same gold color */
+  margin: 8px auto 0; /* Centered line below title */
+  border-radius: 2px; /* Smooth edges */
+}
+
+
+.cardDesc {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.cardIcons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.techIcon {
+  font-size: 1.5rem;
+  color: #ddd;
+}
+

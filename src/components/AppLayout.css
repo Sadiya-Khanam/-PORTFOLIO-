@@ -1,0 +1,97 @@
+/* 🔹 Global Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #121212 !important; /* Force Permanent Dark Mode */
+  color: #fff !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Layout */
+.layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* 🔹 Navigation Bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* 🔹 Navigation Links */
+.navbar a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff !important; /* Ensure text is always visible */
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar a.active {
+  color: #ffd700 !important; /* Gold color for active links */
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 🔹 Name Styling (Fix to Keep It on One Line) */
+.name {
+  display: inline-block; /* Prevents line breaks */
+  white-space: nowrap; /* Ensures text remains in a single row */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff; /* Visibility in Dark Mode */
+}
+
+/* 🔹 Flexbox for Proper Name Alignment */
+.name-container {
+  display: flex;
+  flex-direction: row; /* Ensures name stays side by side */
+  align-items: center; /* Keeps elements properly aligned */
+  gap: 10px; /* Adds spacing between words */
+}
+
+/* 🔹 Main Content Wrapper */
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 📱 Mobile Adjustments */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name-container {
+    flex-direction: row; /* Ensures name remains in one line on mobile */
+    justify-content: center;
+  }
+
+  .main-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
