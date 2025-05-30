@@ -3,7 +3,7 @@
     import { faDownload, faFlag, faEnvelope, faUser, faDatabase, faCode } from '@fortawesome/free-solid-svg-icons';
     import { faReact, faJava, faHtml5, faCss3, faJs, faGithub } from '@fortawesome/free-brands-svg-icons';
     import styles from './About.module.css';
-    import resumePDF from '../../assets/Sadiya_Khanam resume.pdf'; // <--- Import the PDF (adjust the path as needed)
+    import resumePDF from '../../assets/Sadiya_Khanam resume.pdf'; 
 
     const About = () => {
       return (

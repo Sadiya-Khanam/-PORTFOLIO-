@@ -8,15 +8,12 @@ const Home = () => {
       <div className={styles.content}>
         <img src={profileImg} alt="Sadiya Khan Profile" className={styles.image} />
         <h1 className={styles.title}>Sadiya Khanam</h1>
-        <h2 className={styles.role}>Java Developer</h2>
+        <h2 className={styles.role}>Software Developer</h2>
         <p className={styles.description}>
-          Motivated and detail-oriented Java Developer with a strong foundation in Java, Spring Boot, SQL and Web
-          Development . Passionate about problem-solving, data structures, and building scalable applications.
-          Seeking an opportunity to apply technical skills and contribute to innovative projects in a collaborative
-          environment.
+          Motivated and detail-oriented Software Developer with a strong foundation in Java, React, Spring Boot, SQL, and web development. Passionate about problem-solving, data structures, and building scalable applications. Seeking an opportunity to apply technical skills and contribute to innovative projects in a collaborative environment.
         </p>
         {/* Buttons directly within the content div */}
-        </div>
+      </div>
     </section>
   );
 };
